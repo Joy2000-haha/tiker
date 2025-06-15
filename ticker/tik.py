@@ -8,6 +8,8 @@ import traceback
 
 # 忽略一些pandas的警告
 warnings.filterwarnings('ignore')
+device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+print(device)
 
 
 class StockDescriptiveStats:
