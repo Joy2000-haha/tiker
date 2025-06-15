@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import wrds
 import warnings
+import torch
 import os
 from datetime import datetime
 import traceback
