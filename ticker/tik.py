@@ -891,7 +891,7 @@ class StockDescriptiveStats:
 # ==================================
 if __name__ == "__main__":
     # 请将这里的路径修改为您自己存放 ticker_list.csv 文件的实际路径
-    ticker_file_path = '../ticker list.csv'
+    ticker_file_path = 'ticker list.csv'
 
     # 初始化分析器
     analyzer = StockDescriptiveStats(ticker_csv_path=ticker_file_path)
@@ -900,7 +900,7 @@ if __name__ == "__main__":
     success = analyzer.run_analysis(
         start_date='1980-01-01',
         end_date='2024-12-31',
-        output_dir='../News '
+        output_dir='News '
     )
 
     if success:
